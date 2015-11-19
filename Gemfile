@@ -57,3 +57,5 @@ gem 'cancan'
 gem 'paperclip'
 
 gem 'friendly_id'
+
+gem 'stripe'
