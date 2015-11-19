@@ -8828,3 +8828,2120 @@ Migrating to AddAttachmentResourceToBooks (20151118105443)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+
+
+Started GET "/books/1/edit" for 127.0.0.1 at 2015-11-18 17:13:53 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 22ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-18 17:13:53 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (55.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 514ms (Views: 466.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-18 17:13:54 +0530
+
+
+Started GET "/assets/devise.self-07994241331a305f634e4de5f9119bb9adcce26d6447cdb645d123755c83639b.css?body=1" for 127.0.0.1 at 2015-11-18 17:13:54 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2015-11-18 17:13:54 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2015-11-18 17:13:54 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-18 17:13:54 +0530
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2015-11-18 17:13:54 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-18 17:13:54 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:54 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:54 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:54 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-11-18 17:13:55 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-18 17:13:57 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 142ms (Views: 140.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-18 17:14:00 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (13.3ms)
+  Rendered books/index.html.erb within layouts/application (31.2ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 171ms (Views: 158.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2015-11-18 17:14:01 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 139ms (Views: 134.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fontawesome-webfont-a7c7e4930090e038a280fd61d88f0dc03dad4aeaedbd8c9be3dd9aa4c3b6f8d1.woff" for 127.0.0.1 at 2015-11-18 17:14:01 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-18 17:14:03 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 130ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-18 17:14:05 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (17.3ms)
+  Rendered books/index.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 160ms (Views: 158.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2015-11-18 17:14:06 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 134ms (Views: 131.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-18 17:14:08 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (11.0ms)
+  Rendered books/index.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 140ms (Views: 138.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2015-11-18 19:16:01 +0530
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/paras/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/paras/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/paras/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (22.0ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.7ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.8ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2015-11-18 19:16:05 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 179ms (Views: 177.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-18 19:16:07 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (19.2ms)
+  Rendered books/index.html.erb within layouts/application (22.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 149ms (Views: 147.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-18 19:16:09 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (21.4ms)
+  Rendered books/index.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 163ms (Views: 161.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/3" for 127.0.0.1 at 2015-11-18 19:16:10 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered books/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 119ms (Views: 117.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-18 19:16:13 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 133ms (Views: 132.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-18 19:16:14 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (17.0ms)
+  Rendered books/index.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 145ms (Views: 143.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2015-11-18 19:16:20 +0530
+Processing by BooksController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-18 19:16:20 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (26.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 163ms (Views: 161.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-11-18 19:16:32 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+pko5+wIGbkvrPmBtlo8mX6FBCGaHgbbemEaG3AKkLaVSwsVCnkEKSaC39iwTxB3+FU+myTrBOIF83iYUDUu3w==", "user"=>{"email"=>"parasarora85@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "parasarora85@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-18 10:31:28.710397"], ["current_sign_in_at", "2015-11-18 13:46:33.040982"], ["sign_in_count", 5], ["updated_at", "2015-11-18 13:46:33.042322"], ["id", 1]]
+  [1m[36m (125.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/new
+Completed 302 Found in 309ms (ActiveRecord: 126.7ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2015-11-18 19:16:33 +0530
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered books/_form.html.erb (34.2ms)
+  Rendered books/new.html.erb within layouts/application (35.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 164ms (Views: 161.7ms | ActiveRecord: 0.3ms)
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1[0m
+  [1m[35mBook Load (0.5ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1[0m
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:05:15 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 764ms (Views: 737.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:05:19 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (75.3ms)
+  Rendered books/index.html.erb within layouts/application (137.3ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 373ms (Views: 340.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-19 11:05:21 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (256.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 396ms (Views: 380.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-11-19 11:05:31 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dPlGV7UUcgbkQwlDfmWSXUr7XWKKz6Ds7cpiaJSopFa0xInti0Q5saZSgj8KVBKYllH10SKQa2XtmfdeeRAZYg==", "user"=>{"email"=>"parasarora85@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "parasarora85@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-11-18 13:46:33.040982"], ["current_sign_in_at", "2015-11-19 05:35:31.880101"], ["sign_in_count", 6], ["updated_at", "2015-11-19 05:35:31.881488"], ["id", 1]]
+  [1m[35m (125.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 428ms (ActiveRecord: 126.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:05:32 +0530
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/books
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:05:32 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (13.6ms)
+  Rendered books/index.html.erb within layouts/application (16.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 165ms (Views: 163.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2015-11-19 11:05:35 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 152ms (Views: 138.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:05:37 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (20.1ms)
+  Rendered books/index.html.erb within layouts/application (22.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 144ms (Views: 142.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2015-11-19 11:05:40 +0530
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered books/_form.html.erb (50.4ms)
+  Rendered books/new.html.erb within layouts/application (61.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 209ms (Views: 206.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2015-11-19 11:09:27 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5v4qgKhypU+fplhIHFrvEKUEH+OusuWURFNrTZZgWyoclPvjFbjIYhh17Klsg/BobRokmMyCwE8oQIaGPlfYIQ==", "book"=>{"name"=>"Ruby on Rails", "author"=>"Michael Hartl", "description"=>"Ruby on Rails Tutorial is a must read for every rails beginner. I think you should read this after learn ruby on rails book.\r\n\r\nAre you bored with building example applications like how to create blog in rails? So here’s the step by step guide to creating Twitter like social network.\r\n\r\nNot only this book covers rails perfectly, but it is perfect introduction to test driven development in rspec, styling with sass and tracking changes in your code in git.", "price"=>"800", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f5f35c080c8 @tempfile=#<Tempfile:/tmp/RackMultipart20151119-5127-186uyxq.jpeg>, @original_filename="ruby.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"ruby.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "resource"=>#<ActionDispatch::Http::UploadedFile:0x007f5f35c08078 @tempfile=#<Tempfile:/tmp/RackMultipart20151119-5127-1gky97d.jpeg>, @original_filename="ruby.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[resource]\"; filename=\"ruby.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "availability"=>"1"}, "commit"=>"Create Book"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-5127-1ablvtp.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-5127-1r38b11.jpeg'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-5127-1f1nneo.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-5127-c6c12w.jpeg'
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered books/_form.html.erb (14.6ms)
+  Rendered books/new.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 776ms (Views: 417.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2015-11-19 11:10:40 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPJKMTPCrRyi2u/ylw/k11ZTuMLlQoKTCabO8QlOGA42mJtSjgjAMSUJWxPn1vuvnk2DuYdyp0hltSM6oXmbBQ==", "book"=>{"name"=>"Ruby on Rails", "author"=>"Michael Hartl", "description"=>"Ruby on Rails Tutorial is a must read for every rails beginner. I think you should read this after learn ruby on rails book.\r\n\r\nAre you bored with building example applications like how to create blog in rails? So here’s the step by step guide to creating Twitter like social network.\r\n\r\nNot only this book covers rails perfectly, but it is perfect introduction to test driven development in rspec, styling with sass and tracking changes in your code in git.", "price"=>"800", "image"=>#<ActionDispatch::Http::UploadedFile:0x000000058d1990 @tempfile=#<Tempfile:/tmp/RackMultipart20151119-5127-slkfxv.jpeg>, @original_filename="ruby.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"ruby.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "resource"=>#<ActionDispatch::Http::UploadedFile:0x000000058d15d0 @tempfile=#<Tempfile:/tmp/RackMultipart20151119-5127-1fyogja.pdf>, @original_filename="ebook.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"book[resource]\"; filename=\"ebook.pdf\"\r\nContent-Type: application/pdf\r\n">, "availability"=>"1"}, "commit"=>"Create Book"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-5127-5fqp7s.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/4684cddc2fdd1f00234aca819c87230420151119-5127-1ouoyjd.pdf'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-5127-eih7ya.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/4684cddc2fdd1f00234aca819c87230420151119-5127-1032ix2.pdf'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("name", "author", "description", "price", "availability", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "resource_file_name", "resource_content_type", "resource_file_size", "resource_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Ruby on Rails"], ["author", "Michael Hartl"], ["description", "Ruby on Rails Tutorial is a must read for every rails beginner. I think you should read this after learn ruby on rails book.\r\n\r\nAre you bored with building example applications like how to create blog in rails? So here’s the step by step guide to creating Twitter like social network.\r\n\r\nNot only this book covers rails perfectly, but it is perfect introduction to test driven development in rspec, styling with sass and tracking changes in your code in git."], ["price", 800], ["availability", "t"], ["image_file_name", "ruby.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 76588], ["image_updated_at", "2015-11-19 05:40:40.619537"], ["resource_file_name", "ebook.pdf"], ["resource_content_type", "application/pdf"], ["resource_file_size", 15994522], ["resource_updated_at", "2015-11-19 05:40:40.693380"], ["user_id", 1], ["created_at", "2015-11-19 05:40:41.198774"], ["updated_at", "2015-11-19 05:40:41.198774"]]
+  [1m[36m (227.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/4
+Completed 302 Found in 1109ms (ActiveRecord: 227.7ms)
+
+
+Started GET "/books/4" for 127.0.0.1 at 2015-11-19 11:10:41 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered books/show.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 163ms (Views: 161.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:10:47 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (77.0ms)
+  Rendered books/index.html.erb within layouts/application (79.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 227ms (Views: 224.3ms | ActiveRecord: 0.3ms)
+  [1m[35mBook Load (0.5ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1
+  [1m[36mBook Load (0.5ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 1]]
+  [1m[35m (172.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "books" WHERE "books"."id" = ?  [["id", 2]]
+  [1m[36m (167.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 3]]
+  [1m[35m (214.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "books" WHERE "books"."id" = ?  [["id", 4]]
+  [1m[36m (136.3ms)[0m  [1mcommit transaction[0m
+[paperclip] deleting /home/paras/Documents/CodeAstra/rails/Book-store/public/system/books/resources/000/000/004/original/ebook.pdf
+[paperclip] deleting /home/paras/Documents/CodeAstra/rails/Book-store/public/system/books/images/000/000/004/original/ruby.jpeg
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered collection (0.0ms)
+  Rendered books/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 171ms (Views: 169.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/devise.self-07994241331a305f634e4de5f9119bb9adcce26d6447cdb645d123755c83639b.css?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-11-19 11:14:11 +0530
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:14:14 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered collection (0.0ms)
+  Rendered books/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 157ms (Views: 156.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2015-11-19 11:14:18 +0530
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered books/_form.html.erb (14.5ms)
+  Rendered books/new.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 142ms (Views: 140.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2015-11-19 11:15:07 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gSQ6ddsyNAhGaEiJ8GHaR0S31JKzNTJ6Hu7Bmd7eiqB7TusWZvhZJcG7/GiAuMU/jKnv6dEFF6Fy/SxSdukJqw==", "book"=>{"name"=>"Ruby on Rails", "author"=>"Michael Hartl", "description"=>"Ruby on Rails Tutorial is a must read for every rails beginner. I think you should read this after learn ruby on rails book.\r\n\r\nAre you bored with building example applications like how to create blog in rails? So here’s the step by step guide to creating Twitter like social network.\r\n\r\nNot only this book covers rails perfectly, but it is perfect introduction to test driven development in rspec, styling with sass and tracking changes in your code in git.", "price"=>"1000", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000005660d00 @tempfile=#<Tempfile:/tmp/RackMultipart20151119-5127-1ihxks1.jpeg>, @original_filename="ruby.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"ruby.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "resource"=>#<ActionDispatch::Http::UploadedFile:0x00000005660a58 @tempfile=#<Tempfile:/tmp/RackMultipart20151119-5127-fonot0.pdf>, @original_filename="ebook.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"book[resource]\"; filename=\"ebook.pdf\"\r\nContent-Type: application/pdf\r\n">, "availability"=>"1"}, "commit"=>"Create Book"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-5127-1agwivq.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/4684cddc2fdd1f00234aca819c87230420151119-5127-1rd11nb.pdf'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-5127-1eccsh1.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/4684cddc2fdd1f00234aca819c87230420151119-5127-19rgd5z.pdf'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("name", "author", "description", "price", "availability", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "resource_file_name", "resource_content_type", "resource_file_size", "resource_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ruby on Rails"], ["author", "Michael Hartl"], ["description", "Ruby on Rails Tutorial is a must read for every rails beginner. I think you should read this after learn ruby on rails book.\r\n\r\nAre you bored with building example applications like how to create blog in rails? So here’s the step by step guide to creating Twitter like social network.\r\n\r\nNot only this book covers rails perfectly, but it is perfect introduction to test driven development in rspec, styling with sass and tracking changes in your code in git."], ["price", 1000], ["availability", "t"], ["image_file_name", "ruby.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 76588], ["image_updated_at", "2015-11-19 05:45:07.985302"], ["resource_file_name", "ebook.pdf"], ["resource_content_type", "application/pdf"], ["resource_file_size", 15994522], ["resource_updated_at", "2015-11-19 05:45:08.100573"], ["user_id", 1], ["created_at", "2015-11-19 05:45:08.527565"], ["updated_at", "2015-11-19 05:45:08.527565"]]
+  [1m[35m (642.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/5
+Completed 302 Found in 1216ms (ActiveRecord: 642.8ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:15:09 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (3.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 185ms (Views: 183.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:15:26 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (8.6ms)
+  Rendered books/index.html.erb within layouts/application (10.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 203ms (Views: 201.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:19:07 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (4.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 205ms (Views: 202.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:19:09 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (10.4ms)
+  Rendered books/index.html.erb within layouts/application (13.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 159ms (Views: 156.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:19:11 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 145ms (Views: 143.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:19:14 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (5.8ms)
+  Rendered books/index.html.erb within layouts/application (7.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 137ms (Views: 135.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-11-19 11:19:18 +0530
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 168ms (Views: 164.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:19:24 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (6.6ms)
+  Rendered books/index.html.erb within layouts/application (9.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 143ms (Views: 141.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (6.9ms)
+  Rendered books/index.html.erb within layouts/application (8.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 156ms (Views: 154.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/devise.self-07994241331a305f634e4de5f9119bb9adcce26d6447cdb645d123755c83639b.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:18 +0530
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-11-19 11:21:24 +0530
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 151ms (Views: 147.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/devise.self-07994241331a305f634e4de5f9119bb9adcce26d6447cdb645d123755c83639b.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-11-19 11:21:25 +0530
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:21:27 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (12.1ms)
+  Rendered books/index.html.erb within layouts/application (13.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 137ms (Views: 136.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:21:29 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 163ms (Views: 161.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:21:32 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (7.4ms)
+  Rendered books/index.html.erb within layouts/application (9.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 146ms (Views: 144.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:21:33 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 132ms (Views: 130.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:21:52 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (6.4ms)
+  Rendered books/index.html.erb within layouts/application (9.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 144ms (Views: 141.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:21:53 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 141ms (Views: 138.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:21:58 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (7.2ms)
+  Rendered books/index.html.erb within layouts/application (9.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 158ms (Views: 156.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:22:46 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (4.5ms)
+  Rendered books/index.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    1: <div class="col-md-3">
+    2:   <div class="thumbnail">
+    3:     <%= link_to book_path(book) do  %>
+    4:     <%= image_tag @book.image.url(:original), class: "img-responsive" %>
+    5:     <% end %>
+    6:     <div class="caption">
+    7:       <p><strong><%= link_to book.name, book_path(book) %></strong></p>
+  app/views/books/_book.html.erb:4:in `block in _app_views_books__book_html_erb__1661907653150245519_70023453598740'
+  app/views/books/_book.html.erb:3:in `_app_views_books__book_html_erb__1661907653150245519_70023453598740'
+  app/views/books/index.html.erb:3:in `_app_views_books_index_html_erb___3389433657401341863_70023444455000'
+
+
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.9ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.1ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:28:45 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (5.1ms)
+  Rendered books/index.html.erb within layouts/application (16.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (10.5ms)
+Completed 200 OK in 167ms (Views: 159.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:28:45 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2015-11-19 11:28:45 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2015-11-19 11:28:45 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/devise.self-07994241331a305f634e4de5f9119bb9adcce26d6447cdb645d123755c83639b.css?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/assets/rails-book-19003e42ed15e26032059199e466325a68f4e5661ba89dbdd6bd2b19a81d4bb7.jpg" for 127.0.0.1 at 2015-11-19 11:28:46 +0530
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:28:49 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 140ms (Views: 137.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:28:59 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (9.0ms)
+  Rendered books/index.html.erb within layouts/application (11.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 151ms (Views: 148.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:29:10 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:29:12 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (7.4ms)
+  Rendered books/index.html.erb within layouts/application (9.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 140ms (Views: 138.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:29:30 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 154ms (Views: 151.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:29:33 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (4.9ms)
+  Rendered books/index.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 124ms (Views: 122.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-11-19 11:31:26 +0530
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 155ms (Views: 135.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:31:27 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (6.4ms)
+  Rendered books/index.html.erb within layouts/application (9.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 151ms (Views: 148.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2015-11-19 11:31:28 +0530
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 162ms (Views: 160.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:31:31 +0530
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/books
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:31:31 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (4.7ms)
+  Rendered books/index.html.erb within layouts/application (6.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 135ms (Views: 125.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-11-19 11:31:33 +0530
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 156ms (Views: 152.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:31:37 +0530
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/books
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:31:37 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (4.8ms)
+  Rendered books/index.html.erb within layouts/application (6.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 204ms (Views: 202.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:31:44 +0530
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/books
+  [1m[35mBook Load (0.4ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:31:44 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (5.2ms)
+  Rendered books/index.html.erb within layouts/application (6.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 135ms (Views: 133.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:31:55 +0530
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/books
+  [1m[35mBook Load (0.5ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:31:55 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (5.4ms)
+  Rendered books/index.html.erb within layouts/application (7.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 240ms (Views: 239.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:32:16 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/books
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4[0m
+Completed 302 Found in 73ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:32:16 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (420.5ms)
+  Rendered books/index.html.erb within layouts/application (427.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 867ms (Views: 864.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:32:20 +0530
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/books
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4[0m
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:32:20 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (6.4ms)
+  Rendered books/index.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 212ms (Views: 210.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:32:26 +0530
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/books
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4[0m
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:32:26 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (4.6ms)
+  Rendered books/index.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 125ms (Views: 124.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-11-19 11:33:10 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"s/s2gaNjj5GVOMfKPF6zevp99P4N0ryvPnXC4o2HRHhJkefiHqnivBLrcytMh6wCMmPPhW/imXRSZi8pJbDHcw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 132ms (ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-11-19 11:33:13 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"z/hGgY6qa1zi3PCG4fT1SSnuquI1xu255Aj4NquHT0Y1kpfiM2AGcWUPRGeRLeox4fCRmVf2yGKIGxX9A7DMTQ=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:33:13 +0530
+Processing by PagesController#home as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4[0m
+  Rendered books/_book.html.erb (5.0ms)
+  Rendered pages/home.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 162ms (Views: 153.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:33:18 +0530
+Processing by PagesController#home as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4
+  Rendered books/_book.html.erb (5.1ms)
+  Rendered pages/home.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 142ms (Views: 139.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/devise.self-07994241331a305f634e4de5f9119bb9adcce26d6447cdb645d123755c83639b.css?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/assets/rails-book-19003e42ed15e26032059199e466325a68f4e5661ba89dbdd6bd2b19a81d4bb7.jpg" for 127.0.0.1 at 2015-11-19 11:33:19 +0530
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:33:22 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 144ms (Views: 134.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:33:25 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (5.7ms)
+  Rendered books/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 137ms (Views: 135.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:33:31 +0530
+Processing by PagesController#home as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4[0m
+  Rendered books/_book.html.erb (4.5ms)
+  Rendered pages/home.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 127ms (Views: 125.6ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFriendlyIdSlugs (20151119061107)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "friendly_id_slugs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slug" varchar NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" varchar(50), "scope" varchar, "created_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" ("sluggable_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope" ON "friendly_id_slugs" ("slug", "sluggable_type", "scope")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" ("sluggable_type")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151119061107"]]
+  [1m[35m (172.1ms)[0m  commit transaction
+Migrating to AddSlugToBooks (20151119061229)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "books" ADD "slug" varchar
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "index_books_on_slug" ON "books" ("slug")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151119061229"]]
+  [1m[36m (162.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_books_on_slug' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_books_on_slug' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-19 11:45:42 +0530
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (137.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 421ms (Views: 409.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-11-19 11:45:49 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xzoxRxgvU2K26D9JeNbmbZkgEWHVhxtd+LlfjyMPcjUOs8S/nmqpxEz+9P650q7JbezIX0/X/YUniRwQWy/WuA==", "user"=>{"email"=>"parasarora85@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "parasarora85@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-11-19 05:35:31.880101"], ["current_sign_in_at", "2015-11-19 06:15:50.210818"], ["sign_in_count", 7], ["updated_at", "2015-11-19 06:15:50.212331"], ["id", 1]]
+  [1m[35m (129.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 490ms (ActiveRecord: 130.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:45:50 +0530
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/books
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+NameError (uninitialized constant Book::FriendlyId):
+  app/models/book.rb:2:in `<class:Book>'
+  app/models/book.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:8:in `home'
+
+
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.8ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:47:48 +0530
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/books
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+NameError (uninitialized constant Book::FriendlyId):
+  app/models/book.rb:2:in `<class:Book>'
+  app/models/book.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:8:in `home'
+
+
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.2ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:48:54 +0530
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/books
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.2ms)
+
+NameError (undefined local variable or method `friendly_id' for #<Class:0x00000003fc32a0>):
+  app/models/book.rb:2:in `<class:Book>'
+  app/models/book.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:8:in `home'
+
+
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.9ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.3ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:49:04 +0530
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/books
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.9ms)
+
+NameError (uninitialized constant Book::FriendlyId):
+  app/models/book.rb:2:in `<class:Book>'
+  app/models/book.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:8:in `home'
+
+
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.5ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/paras/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 11:56:52 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/books
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4[0m
+Completed 302 Found in 130ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:56:52 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (261.3ms)
+  Rendered books/index.html.erb within layouts/application (268.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (3.3ms)
+Completed 200 OK in 592ms (Views: 589.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/devise.self-07994241331a305f634e4de5f9119bb9adcce26d6447cdb645d123755c83639b.css?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/assets/rails-book-19003e42ed15e26032059199e466325a68f4e5661ba89dbdd6bd2b19a81d4bb7.jpg" for 127.0.0.1 at 2015-11-19 11:56:53 +0530
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:57:14 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (6.0ms)
+  Rendered books/index.html.erb within layouts/application (8.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:57:15 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (6.0ms)
+  Rendered books/index.html.erb within layouts/application (8.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 140ms (Views: 138.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-11-19 11:57:16 +0530
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 227ms (Views: 131.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:57:19 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (6.6ms)
+  Rendered books/index.html.erb within layouts/application (9.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 144ms (Views: 142.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2015-11-19 11:57:21 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mBook Load (0.5ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1  [["slug", "5"]]
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (4.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 151ms (Views: 145.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/fontawesome-webfont-a7c7e4930090e038a280fd61d88f0dc03dad4aeaedbd8c9be3dd9aa4c3b6f8d1.woff" for 127.0.0.1 at 2015-11-19 11:57:21 +0530
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 11:57:23 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (4.8ms)
+  Rendered books/index.html.erb within layouts/application (6.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 138ms (Views: 137.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2015-11-19 11:59:21 +0530
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered books/_form.html.erb (207.6ms)
+  Rendered books/new.html.erb within layouts/application (209.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 358ms (Views: 355.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2015-11-19 11:59:22 +0530
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered books/_form.html.erb (23.8ms)
+  Rendered books/new.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 156ms (Views: 154.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2015-11-19 12:00:24 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DIao5v6sMDq1xmgaNTF84VRAGzFBHDa0VEIT2VLY6rugQlYm/Qbu7EP3eNptCNLVyBnx/7fb2fhoywp1fSbl5w==", "book"=>{"name"=>"ruby_slugged_book", "author"=>"robot", "description"=>"hello", "price"=>"100", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa158620510 @tempfile=#<Tempfile:/tmp/RackMultipart20151119-20506-oqb4np.jpeg>, @original_filename="ruby.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"ruby.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "resource"=>#<ActionDispatch::Http::UploadedFile:0x007fa1586204c0 @tempfile=#<Tempfile:/tmp/RackMultipart20151119-20506-mya2w3.pdf>, @original_filename="ebook.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"book[resource]\"; filename=\"ebook.pdf\"\r\nContent-Type: application/pdf\r\n">, "availability"=>"1"}, "commit"=>"Create Book"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-20506-1bk88l.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/4684cddc2fdd1f00234aca819c87230420151119-20506-1x9qa7e.pdf'
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBook Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "books" WHERE ("books"."id" IS NOT NULL) AND "books"."slug" = ? LIMIT 1[0m  [["slug", "ruby_slugged_book"]]
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-20506-1xfw8vn.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/4684cddc2fdd1f00234aca819c87230420151119-20506-1towcw7.pdf'
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "books" ("name", "author", "description", "price", "availability", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "resource_file_name", "resource_content_type", "resource_file_size", "resource_updated_at", "user_id", "slug", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "ruby_slugged_book"], ["author", "robot"], ["description", "hello"], ["price", 100], ["availability", "t"], ["image_file_name", "ruby.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 76588], ["image_updated_at", "2015-11-19 06:30:24.910208"], ["resource_file_name", "ebook.pdf"], ["resource_content_type", "application/pdf"], ["resource_file_size", 15994522], ["resource_updated_at", "2015-11-19 06:30:25.280121"], ["user_id", 1], ["slug", "ruby_slugged_book"], ["created_at", "2015-11-19 06:30:26.368277"], ["updated_at", "2015-11-19 06:30:26.368277"]]
+  [1m[36m (335.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/ruby_slugged_book
+Completed 302 Found in 2195ms (ActiveRecord: 336.6ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2015-11-19 12:00:27 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DIao5v6sMDq1xmgaNTF84VRAGzFBHDa0VEIT2VLY6rugQlYm/Qbu7EP3eNptCNLVyBnx/7fb2fhoywp1fSbl5w==", "book"=>{"name"=>"ruby_slugged_book", "author"=>"robot", "description"=>"hello", "price"=>"100", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa1582886f0 @tempfile=#<Tempfile:/tmp/RackMultipart20151119-20506-z3ph7e.jpeg>, @original_filename="ruby.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"ruby.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "resource"=>#<ActionDispatch::Http::UploadedFile:0x007fa1582886a0 @tempfile=#<Tempfile:/tmp/RackMultipart20151119-20506-qpa2kh.pdf>, @original_filename="ebook.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"book[resource]\"; filename=\"ebook.pdf\"\r\nContent-Type: application/pdf\r\n">, "availability"=>"1"}, "commit"=>"Create Book"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-20506-fzuc3p.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/4684cddc2fdd1f00234aca819c87230420151119-20506-11xg8sz.pdf'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBook Exists (0.1ms)[0m  SELECT  1 AS one FROM "books" WHERE ("books"."id" IS NOT NULL) AND "books"."slug" = ? LIMIT 1  [["slug", "ruby_slugged_book"]]
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20151119-20506-1ip4jrj.jpeg'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/4684cddc2fdd1f00234aca819c87230420151119-20506-122j77b.pdf'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "books" ("name", "author", "description", "price", "availability", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "resource_file_name", "resource_content_type", "resource_file_size", "resource_updated_at", "user_id", "slug", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "ruby_slugged_book"], ["author", "robot"], ["description", "hello"], ["price", 100], ["availability", "t"], ["image_file_name", "ruby.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 76588], ["image_updated_at", "2015-11-19 06:30:27.396804"], ["resource_file_name", "ebook.pdf"], ["resource_content_type", "application/pdf"], ["resource_file_size", 15994522], ["resource_updated_at", "2015-11-19 06:30:27.469834"], ["user_id", 1], ["slug", "ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"], ["created_at", "2015-11-19 06:30:27.789868"], ["updated_at", "2015-11-19 06:30:27.789868"]]
+  [1m[35m (772.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88
+Completed 302 Found in 1194ms (ActiveRecord: 773.2ms)
+
+
+Started GET "/books/ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88" for 127.0.0.1 at 2015-11-19 12:00:28 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"]]
+  Rendered books/show.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 125ms (Views: 122.4ms | ActiveRecord: 0.3ms)
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" ASC LIMIT 1000[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mBook Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "books" WHERE ("books"."id" != 5) AND "books"."slug" = ? LIMIT 1[0m  [["slug", "ruby-on-rails"]]
+  [1m[35mSQL (0.4ms)[0m  UPDATE "books" SET "slug" = ?, "updated_at" = ? WHERE "books"."id" = ?  [["slug", "ruby-on-rails"], ["updated_at", "2015-11-19 06:31:29.904564"], ["id", 5]]
+  [1m[36m (163.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/books/ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88" for 127.0.0.1 at 2015-11-19 12:01:39 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"]]
+  Rendered books/show.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 205ms (Views: 201.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/devise.self-07994241331a305f634e4de5f9119bb9adcce26d6447cdb645d123755c83639b.css?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-11-19 12:01:40 +0530
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 12:01:44 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (19.2ms)
+  Rendered books/index.html.erb within layouts/application (21.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 167ms (Views: 165.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88" for 127.0.0.1 at 2015-11-19 12:01:46 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"]]
+  Rendered books/show.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (7.3ms)
+Completed 200 OK in 151ms (Views: 148.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 12:02:04 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (13.6ms)
+  Rendered books/index.html.erb within layouts/application (15.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 150ms (Views: 148.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/ruby_slugged_book" for 127.0.0.1 at 2015-11-19 12:02:05 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"ruby_slugged_book"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "ruby_slugged_book"]]
+  Rendered books/show.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 126ms (Views: 123.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 12:02:08 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (14.0ms)
+  Rendered books/index.html.erb within layouts/application (16.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 150ms (Views: 148.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/ruby-on-rails" for 127.0.0.1 at 2015-11-19 12:02:09 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"ruby-on-rails"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "ruby-on-rails"]]
+  Rendered books/show.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 140ms (Views: 138.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 12:02:11 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (14.1ms)
+  Rendered books/index.html.erb within layouts/application (15.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 150ms (Views: 148.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/ruby_slugged_book" for 127.0.0.1 at 2015-11-19 12:02:12 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"ruby_slugged_book"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "ruby_slugged_book"]]
+  Rendered books/show.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 212ms (Views: 208.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 12:02:13 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (21.0ms)
+  Rendered books/index.html.erb within layouts/application (22.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 196ms (Views: 195.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88" for 127.0.0.1 at 2015-11-19 12:02:15 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"]]
+  Rendered books/show.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 133ms (Views: 130.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 12:02:18 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (23.6ms)
+  Rendered books/index.html.erb within layouts/application (26.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 154ms (Views: 152.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88" for 127.0.0.1 at 2015-11-19 12:03:03 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"]]
+  Rendered books/show.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 145ms (Views: 142.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88/edit" for 127.0.0.1 at 2015-11-19 12:03:06 +0530
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1  [["slug", "ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/_form.html.erb (17.8ms)
+  Rendered books/edit.html.erb within layouts/application (19.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 189ms (Views: 165.7ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/books/ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88" for 127.0.0.1 at 2015-11-19 12:03:08 +0530
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cZQqVtsa484SIuZeQxtC1Ed7k4S14JugITxIucNPUprdUNSW2LA9GOQT9p4bIuzg2yJ5SkMndOwdtVEV7LFdxg==", "book"=>{"name"=>"ruby_slugged_book", "author"=>"robot", "description"=>"hello", "price"=>"100", "availability"=>"0"}, "commit"=>"Update Book", "id"=>"ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "books" SET "availability" = ?, "updated_at" = ? WHERE "books"."id" = ?  [["availability", "f"], ["updated_at", "2015-11-19 06:33:08.964862"], ["id", 7]]
+  [1m[36m (330.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88
+Completed 302 Found in 343ms (ActiveRecord: 331.5ms)
+
+
+Started GET "/books/ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88" for 127.0.0.1 at 2015-11-19 12:03:09 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1  [["slug", "ruby_slugged_book-21ad4454-bc78-4c6d-864a-2de2b1271f88"]]
+  Rendered books/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 147ms (Views: 143.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-11-19 12:03:11 +0530
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (12.8ms)
+  Rendered books/index.html.erb within layouts/application (14.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 148ms (Views: 146.7ms | ActiveRecord: 0.3ms)

@@ -4,3 +4,9 @@
   <%= link_to "Books", books_path, class: "btn btn-primary btn-md" %>
   <%= link_to "Sign_up", new_user_session_path, class: "btn btn-primary btn-md" %>
 </div>  
+
+<div class="row">
+  
+  <%= render @books %>
+
+</div>
