@@ -2,6 +2,7 @@ class Book < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: :slugged
   belongs_to :user
+  has_many :sales
   has_attached_file :image
   has_attached_file :resource
 
@@ -17,5 +18,5 @@ class Book < ActiveRecord::Base
   validates :resource, attachment_presence: true
 
   validates_numericality_of :price,
-  greater_than: 49, message: "must be at least 50 cents"
+  greater_than: 49, message: "must be at least 50 rupee"
 end
