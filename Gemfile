@@ -47,7 +47,7 @@ group :development do
   gem 'dotenv-rails'
 end
 
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'twitter-bootstrap-rails'
 
 gem 'simple_form'
 
